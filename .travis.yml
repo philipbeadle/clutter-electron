@@ -1,0 +1,27 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - '8'
+  - '7'
+  - '6'
+
+before_script:
+  - export DISPLAY=:99.0; sh -e /etc/init.d/xvfb start
+
+install:
+  - npm install
+
+script:
+  - npm run lint
+  - npm test
+  
+
+deploy:
+  provider: releases
+  api_key: "a20eee9123862b85eb34c0382f6fb03f46d198d1"
+  file: "./dist/mac/MyApp.app"
+  skip_cleanup: true
+  on:
+    tags: true
