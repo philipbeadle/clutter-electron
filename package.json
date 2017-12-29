@@ -6,7 +6,6 @@
   "homepage": "./",
   "dependencies": {
     "electron": "^1.7.10",
-    "holochain-web-components": "^0.0.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",

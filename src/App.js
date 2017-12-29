@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Follow from 'holochain-web-components';
+// import Follow from 'holochain-web-components';
 
 class App extends Component {
   render() {
