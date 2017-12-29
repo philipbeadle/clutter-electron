@@ -7,8 +7,7 @@ node_js:
 script:
   - npm install
   - npm run build
-  - npm run start:site
-  - npm run cypress:record
+  - npm run start:site && sleep 15 && npm run cypress:record
 
 cache:
   directories:
