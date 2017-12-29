@@ -1,0 +1,15 @@
+sudo: required
+
+language: node_js
+node_js:
+  - "8"
+
+script:
+  - npm install
+  - npm run build
+  - npm run start:site
+  - npm run cypress:record
+
+cache:
+  directories:
+    - ui-automation/node_modules

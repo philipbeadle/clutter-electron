@@ -1,0 +1,24 @@
+{
+  "name": "clutter-electron",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron-start.js",
+  "homepage": "./",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "holochain-web-components": "^0.0.8",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "styled-jsx": "^2.2.1"
+  },
+  "scripts": {
+    "start:site": "react-scripts start",
+    "start:electron": "DEV_URL='http://localhost:3000' && electron .",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "cypress:record": "cypress run --record --key f282ff74-89ad-45ed-9455-138796e71e88",
+    "cypress:open": "cypress open"
+  }
+}
